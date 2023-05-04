@@ -1,4 +1,4 @@
-package mini_projects.login;
+package mini_projects_login.login;
 
 public class User {
     private String name;
