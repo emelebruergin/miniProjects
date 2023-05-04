@@ -95,6 +95,7 @@ public class UserService {
                 idx=emailList.indexOf(usernameOrEmail);
             }
 
+
             if (passwordList.get(idx).equals(password)){
                 System.out.println("Sisteme giriş yaptınız.");
                 break;
