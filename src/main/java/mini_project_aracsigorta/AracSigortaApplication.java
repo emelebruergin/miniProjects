@@ -1,7 +1,5 @@
-package aracsigorta;
+package mini_project_aracsigorta;
 
-import java.net.Socket;
-import java.nio.file.LinkPermission;
 import java.util.Scanner;
 
 public class AracSigortaApplication {

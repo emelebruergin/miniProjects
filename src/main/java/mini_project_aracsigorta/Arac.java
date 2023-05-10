@@ -1,4 +1,4 @@
-package aracsigorta;
+package mini_project_aracsigorta;
 
 import java.util.Scanner;
 

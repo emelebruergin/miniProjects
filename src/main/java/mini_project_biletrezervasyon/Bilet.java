@@ -1,4 +1,4 @@
-package biletrezervasyon;
+package mini_project_biletrezervasyon;
 
 public class Bilet {
     public int yas;
