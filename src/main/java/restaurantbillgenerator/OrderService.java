@@ -14,21 +14,22 @@ public class OrderService {
         while (dishCode!=0){
             System.out.println("Lütfen ürün kodunu giriniz:(ÇIKIŞ:0)");
             dishCode=input.nextInt();//code ile ürünü bulmamız gerekiyo
-            Dish dish=dishService.findDishByCode(dishCode);
-            if (dish.getKod()>0){
-                System.out.println("Adet giriniz:");
-                int num=input.nextInt();
-                Order order=new Order(dish,num);
-                order.setPrice();
-                order.setOrderCode(1000+this.orderList.size());
-                this.orderList.add(order);
-            }
+            if (dishService.findDishByCode(dishCode)!=null) {
+                Dish dish = dishService.findDishByCode(dishCode);
+                if (dish.getKod() > 0) {
+                    System.out.println("Adet giriniz:");
+                    int num = input.nextInt();
+                    Order order = new Order(dish, num);
+                    order.setPrice();
+                    order.setOrderCode(1000 + this.orderList.size());
+                    this.orderList.add(order);
+                }
 
-            for (Order order:this.orderList){
-                System.out.printf("Sipariş kodu:%-5s  lezzet kodu:%-4s  adı:%-20s  adet:%-3s\n ",
-                        order.orderCode,order.dish.getKod(),order.dish.getYiyecekIsmi(),order.numOfDish);
+                for (Order order : this.orderList) {
+                    System.out.printf("Sipariş kodu:%-5s  lezzet kodu:%-4s  adı:%-20s  adet:%-3s\n ",
+                            order.orderCode, order.dish.getKod(), order.dish.getYiyecekIsmi(), order.numOfDish);
+                }
             }
-
 
         }
     }

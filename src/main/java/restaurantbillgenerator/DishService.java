@@ -43,7 +43,7 @@ public class DishService {
 
     }
 
-    public  Dish findDishByCode(int code){
+    public Dish findDishByCode(int code){
         if(code==0){
             System.out.println("Ana menuye yönlendiriliyorsunuz.");
         }else {
@@ -54,6 +54,6 @@ public class DishService {
             }
             System.out.println("Urun bulunamadı");
         }
-        return new Dish(0,"",0);
+        return null;
     }
 }

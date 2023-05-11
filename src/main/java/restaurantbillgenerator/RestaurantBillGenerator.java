@@ -22,6 +22,19 @@ public class RestaurantBillGenerator {
              Sipariş iptal:Sipariş kodu girilerek sipariş silinsin
              Hesap oluşturma:Tutarları ile birlikte tüm siparişleri ve
                              toplam tutarı gösteren bir hesap fişi yazdırılsın.
+
+
+
+         Şirket büyüdü cafe kısmı açıldı.
+         aynı uygulama cafe kısmında da kullanılsın.
+         Cafede farklı menu var.
+           Dish dish1=new Dish(401,"Tiramisu",35.0);
+           Dish dish1=new Dish(402,"Dondurma",25.0);
+           Dish dish1=new Dish(403,"Profiterol",25.0);
+           Dish dish1=new Dish(404,"Kahve",17.5);
+           Dish dish1=new Dish(405,"Çay",7.5);
+           Dish dish1=new Dish(406,"Portakal Suyu",25.5);
+           Uygulama başladığında restaurant/cafe seceneği olsun
      */
 
     public static void main(String[] args) {
