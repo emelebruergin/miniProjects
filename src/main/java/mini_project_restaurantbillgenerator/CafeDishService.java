@@ -1,4 +1,4 @@
-package restaurantbillgenerator;
+package mini_project_restaurantbillgenerator;
 
 public class CafeDishService extends DishService {
     @Override

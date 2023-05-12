@@ -1,4 +1,4 @@
-package restaurantbillgenerator;
+package mini_project_restaurantbillgenerator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -66,7 +66,7 @@ public class OrderService {
         System.out.println("        Lezzet Fişiniz          ");
         for (Order order:this.orderList){
             System.out.printf("Lezzet kodu:%-5s  adı:%-20s  adet:%-5s  sipariş tutarı:%-5s Lira \n",
-            order.dish.getKod(), order.dish.getYiyecekIsmi(),order.numOfDish,order.orderPrice);
+                    order.dish.getKod(), order.dish.getYiyecekIsmi(),order.numOfDish,order.orderPrice);
             totalPrice+=order.orderPrice;
         }
         System.out.println("Toplam Tutar: "+totalPrice);

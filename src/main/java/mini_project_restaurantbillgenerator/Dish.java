@@ -1,7 +1,6 @@
-package restaurantbillgenerator;
+package mini_project_restaurantbillgenerator;
 
 public class Dish {
-
     private int kod;
     private String yiyecekIsmi;
     private double ucret;

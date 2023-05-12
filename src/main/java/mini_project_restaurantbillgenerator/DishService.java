@@ -1,4 +1,4 @@
-package restaurantbillgenerator;
+package mini_project_restaurantbillgenerator;
 
 import java.util.ArrayList;
 import java.util.List;

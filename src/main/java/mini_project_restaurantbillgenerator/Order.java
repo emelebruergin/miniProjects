@@ -1,7 +1,6 @@
-package restaurantbillgenerator;
+package mini_project_restaurantbillgenerator;
 
-public class Order {
-    public int orderCode;
+public class Order {    public int orderCode;
     public Dish dish;
     public int numOfDish;
     public double orderPrice;
@@ -18,4 +17,5 @@ public class Order {
     public void setPrice(){
         this.orderPrice= this.dish.getUcret()*this.numOfDish;
     }
+
 }
